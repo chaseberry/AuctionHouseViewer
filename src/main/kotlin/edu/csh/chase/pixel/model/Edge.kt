@@ -4,9 +4,10 @@ import edu.csh.chase.pixel.engine.Collidable
 import edu.csh.chase.pixel.engine.Ray
 import javafx.scene.shape.Rectangle
 
-class Ball(x: Double, y: Double, ray: Ray) : Collidable(ray, Rectangle(x, y, 30.0, 30.0)) {
+class Edge(x: Double, y: Double, w: Double, h: Double, val isVertical: Boolean) : Collidable(Ray(0.0, 0), Rectangle(x, y, w, h)) {
 
     override fun doCollide(obj: Collidable) {
 
     }
+
 }
